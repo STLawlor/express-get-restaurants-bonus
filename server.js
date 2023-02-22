@@ -12,7 +12,7 @@ app.get("/restaurants", async (req, res) => {
     });
     res.json(restaurants);
   } catch (err) {
-    console.log(err);
+    res.send(err);
   }
 });
 
